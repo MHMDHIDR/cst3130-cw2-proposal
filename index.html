@@ -10,20 +10,32 @@
   <title>Forex Data Visualization</title>
 </head>
 
-<body class="grid grid-cols-2 gap-4 p-4 h-screen overflow-hidden">
-  <div id="forexData" class="col-span-1 p-6 bg-white shadow-md rounded-md">
+<body class="grid grid-cols-3 gap-4 p-4 h-screen">
+  <div id="forexData" class="col-span-2 p-6 bg-white shadow-md rounded-md">
 
     <h1 class="text-2xl font-bold mb-4 text-center select-none">Exchange Rate Data</h1>
 
-    <div class="max-w-max mx-auto">
-      <img src="./assets/001.jpg" alt="Forex Data Visualization" class="my-10 rounded-md shadow-lg ">
-
-      <img src="./assets/002.jpg" alt="Forex Data Visualization" class="my-10 rounded-md shadow-lg ">
+    <div class="charts__container max-w-max mx-auto">
+      <!-- Chart 1 -->
+      <img id="chart1" src="./assets/001.jpg" alt="Forex Data Visualization"
+        class="h-full my-10 rounded-md shadow-lg forex-chart">
+      <!-- Chart 2 -->
+      <img id="chart2" src="./assets/002.jpg" alt="Forex Data Visualization"
+        class="h-full my-10 rounded-md shadow-lg forex-chart hidden">
     </div>
 
+    <button id="toggleButton"
+      class="my-2.5 p-2 bg-blue-500 hover:bg-blue-600 text-white rounded-md mx-auto w-full font-bold"
+      onclick="toggleCharts()">
+      SWITCH CHARTS
+    </button>
 
-    <p class="text-gray-700 text-green-400">
-      Exchange rate data is sourced from the Alpha Vantage API. The data is updated daily and is available for free.
+
+    <p class="text-gray-700 text-green-400 text-sm">
+      Exchange rate data is sourced from the <a class="italic underline hover:text-green-700 hover:font-bold"
+        href="https://www.alphavantage.co">Alpha
+        Vantage
+        API</a>. The data is updated daily and is available for free.
     </p>
   </div>
 

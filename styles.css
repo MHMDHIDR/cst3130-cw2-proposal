@@ -8,9 +8,21 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#forexData img {
+.charts__container {
+  display: flex;
+  margin: 0 auto;
+}
+
+.charts__container #forexData img {
+  cursor: pointer;
   max-width: 100%;
-  height: auto;
+  min-height: 10rem;
+  height: 10rem;
+  width: 35rem;
+}
+
+.charts__container #forexData img::hover {
+  transform: scale(1.1);
 }
 
 #newsHeadlines {

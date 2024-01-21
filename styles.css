@@ -1,0 +1,25 @@
+/* Additional styles specific to your project can be added here */
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+#forexData {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#forexData img {
+  max-width: 100%;
+  height: auto;
+}
+
+#newsHeadlines {
+  border-radius: 8px;
+}
+
+.headline {
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 10px;
+}

@@ -10,19 +10,19 @@
   <title>Forex Data Visualization</title>
 </head>
 
-<body class="grid grid-cols-3 gap-4 p-4 h-screen">
+<body class="grid h-screen grid-cols-3 gap-4 p-4">
 
-  <div id="forexData" class="col-span-3 md:col-span-2 p-6 bg-white shadow-md rounded-md">
+  <div id="forexData" class="col-span-3 p-6 bg-white rounded-md shadow-md md:col-span-2">
 
-    <h1 class="text-2xl font-bold mb-4 text-center select-none">Exchange Rate Data</h1>
+    <h1 class="mb-4 text-2xl font-bold text-center select-none">Exchange Rate Data</h1>
 
-    <div class="charts__container max-w-max mx-auto">
+    <div class="mx-auto charts__container max-w-max">
       <!-- Chart 1 -->
       <img id="chart1" src="./assets/001.jpg" alt="Forex Data Visualization"
         class="h-full my-10 rounded-md shadow-lg forex-chart">
       <!-- Chart 2 -->
       <img id="chart2" src="./assets/002.jpg" alt="Forex Data Visualization"
-        class="h-full my-10 rounded-md shadow-lg forex-chart hidden">
+        class="hidden h-full my-10 rounded-md shadow-lg forex-chart">
     </div>
 
     <button id="toggleButton"
@@ -32,7 +32,7 @@
     </button>
 
 
-    <p class="text-gray-700 text-green-400 text-sm">
+    <p class="text-sm text-gray-700 text-green-400">
       Exchange rate data is sourced from the <a class="italic underline hover:text-green-700 hover:font-bold"
         href="https://www.alphavantage.co">Alpha
         Vantage
@@ -40,142 +40,142 @@
     </p>
   </div>
 
-  <div id="newsHeadlines" class="col-span-3 md:col-span-1 p-6 bg-gray-200 max-h-screen md:overflow-y-auto">
+  <div id="newsHeadlines" class="max-h-screen col-span-3 p-6 bg-gray-200 md:col-span-1 md:overflow-y-auto">
 
-    <h2 class="text-xl font-bold mb-4">Sentiment Analysis</h2>
+    <h2 class="mb-4 text-xl font-bold">Sentiment Analysis</h2>
 
 
     <div class="flex flex-col mb-4">
-      <div style="position: relative; width: 410px; height: 550px;">
+      <div class="relative w-full max-h-fit">
         <div id="sentiment_analysis"></div>
       </div>
     </div>
 
-    <div class="-mt-72">
-      <h2 class="text-xl font-bold mb-4">Exchange Rate News</h2>
+    <div class="mt-10 border-t-2 border-green-400">
+      <h2 class="mt-10 mb-4 text-xl font-bold">Exchange Rate News</h2>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">USD/EUR Exchange Rate Hits All-Time High</h3>
         <p>The USD to EUR exchange rate has reached a historic peak, impacting global markets.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Central Banks Intervene to Stabilize Exchange Rates</h3>
         <p>Central banks collaborate to address volatility and stabilize major currency exchange rates.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Forex Traders React to Latest Economic Data</h3>
         <p>Traders respond to economic indicators influencing exchange rates in the foreign exchange market.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Global Trade Tensions Impacting Currency Values</h3>
         <p>Trade tensions between major economies lead to fluctuations in currency values across the board.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Cryptocurrency Market Influencing Traditional Currency Exchanges</h3>
         <p>The rise of cryptocurrencies is reshaping the landscape of traditional currency exchanges.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Emerging Market Currencies Experience Volatility Amid Economic Uncertainty
         </h3>
         <p>Currencies in emerging markets face increased volatility due to ongoing economic uncertainties.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Global Trade Tensions Impacting Currency Values</h3>
         <p>Trade tensions between major economies lead to fluctuations in currency values across the board.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Cryptocurrency Market Influencing Traditional Currency Exchanges</h3>
         <p>The rise of cryptocurrencies is reshaping the landscape of traditional currency exchanges.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Emerging Market Currencies Experience Volatility Amid Economic Uncertainty
         </h3>
         <p>Currencies in emerging markets face increased volatility due to ongoing economic uncertainties.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Global Trade Tensions Impacting Currency Values</h3>
         <p>Trade tensions between major economies lead to fluctuations in currency values across the board.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Cryptocurrency Market Influencing Traditional Currency Exchanges</h3>
         <p>The rise of cryptocurrencies is reshaping the landscape of traditional currency exchanges.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Emerging Market Currencies Experience Volatility Amid Economic Uncertainty
         </h3>
         <p>Currencies in emerging markets face increased volatility due to ongoing economic uncertainties.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Global Trade Tensions Impacting Currency Values</h3>
         <p>Trade tensions between major economies lead to fluctuations in currency values across the board.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Cryptocurrency Market Influencing Traditional Currency Exchanges</h3>
         <p>The rise of cryptocurrencies is reshaping the landscape of traditional currency exchanges.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Emerging Market Currencies Experience Volatility Amid Economic Uncertainty
         </h3>
         <p>Currencies in emerging markets face increased volatility due to ongoing economic uncertainties.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Global Trade Tensions Impacting Currency Values</h3>
         <p>Trade tensions between major economies lead to fluctuations in currency values across the board.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Cryptocurrency Market Influencing Traditional Currency Exchanges</h3>
         <p>The rise of cryptocurrencies is reshaping the landscape of traditional currency exchanges.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Emerging Market Currencies Experience Volatility Amid Economic Uncertainty
         </h3>
         <p>Currencies in emerging markets face increased volatility due to ongoing economic uncertainties.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Global Trade Tensions Impacting Currency Values</h3>
         <p>Trade tensions between major economies lead to fluctuations in currency values across the board.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Cryptocurrency Market Influencing Traditional Currency Exchanges</h3>
         <p>The rise of cryptocurrencies is reshaping the landscape of traditional currency exchanges.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Emerging Market Currencies Experience Volatility Amid Economic Uncertainty
         </h3>
         <p>Currencies in emerging markets face increased volatility due to ongoing economic uncertainties.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Global Trade Tensions Impacting Currency Values</h3>
         <p>Trade tensions between major economies lead to fluctuations in currency values across the board.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Cryptocurrency Market Influencing Traditional Currency Exchanges</h3>
         <p>The rise of cryptocurrencies is reshaping the landscape of traditional currency exchanges.</p>
       </div>
 
-      <div class="headline mb-4">
+      <div class="mb-4 headline">
         <h3 class="text-lg font-semibold">Emerging Market Currencies Experience Volatility Amid Economic Uncertainty
         </h3>
         <p>Currencies in emerging markets face increased volatility due to ongoing economic uncertainties.</p>
